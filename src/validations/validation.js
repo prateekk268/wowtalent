@@ -24,9 +24,7 @@ const isValidInputValue = function (data) {
     return ["+91", "+92", "+93", "+61", "+86", "+1", "+44"].indexOf(value) !== -1;
   };
 
-  const isValidGender = function (value) {
-    return ["male", "female", "other"].indexOf(value) !== -1;
-  };
+
 
   const isValidPhone = function (value) {
     const test2 = /^(\+91[\-\s]?)?[0]?(91)?[6-9]\d{9}$/  
