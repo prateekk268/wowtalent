@@ -52,4 +52,4 @@ const isValidStatus = function (value) {
 };
 
 
-  module.exports = { isValidObjectId, isValidStatus, isValidPassword, isValidEmail, isValidInputValue, isValidCountryCode, isValidRequestBody, isValidGender, isValidOnlyCharacters, isValidPhone }
+  module.exports = { isValidObjectId, isValidStatus, isValidPassword, isValidEmail, isValidInputValue, isValidCountryCode, isValidRequestBody,  isValidOnlyCharacters, isValidPhone }

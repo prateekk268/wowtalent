@@ -4,12 +4,13 @@ const mongoose = require('mongoose')
 const route = require("./src/route/route")
 
 
+
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 
 const DBConnection = async () => {
-    const MONGO_URI = "mongodb+srv://prateek:cvKx4jrPzfgmmbUT@mern.483njbl.mongodb.net/?retryWrites=true&w=majority";
+    const MONGO_URI = "mongodb+srv://prateek:cvKx4jrPzfgmmbUT@mern.483njbl.mongodb.net/?retryWrites=true&w=majority"; 
     try {
         await mongoose.connect(MONGO_URI,{dbName: "wowalent", useNewUrlParser: true});
         console.log("Database connected successfully");
