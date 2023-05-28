@@ -197,7 +197,7 @@ const followUser = async (req, res) => {
 
     return res.status(200).send({ msg: "Followed" });
   } catch (err) {
-    res.status(500).send({ status: false, message: "err.Message" });
+    res.status(500).send({ status: false, message: err.message });
   }
 };
 

@@ -5,6 +5,11 @@ const { registerUser, loginUser, followUser, unfollowUser, updateUser } = requir
 const { postCreate, likePost, getList, getMyLikedList, updatePost, deletePosts } = require('../controller/postController.js')
 const { createComment, createSubComment } = require('../controller/commentController.js')
 
+// 
+route.get("/", (req, res) => {
+    res.send("Hello World");
+})
+
 //------------------------user----------------------------
 route.post("/register", registerUser);
 route.post("/login", loginUser);
